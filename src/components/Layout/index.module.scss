@@ -1,0 +1,11 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    //background-color: red;
+    min-height: 100vh;
+    .pages {
+        flex: 1;
+    }
+
+
+}

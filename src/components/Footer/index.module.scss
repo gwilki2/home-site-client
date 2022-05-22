@@ -1,0 +1,29 @@
+@import '../../config/globalStyleVars.scss';
+
+$topBottomPadding: .5rem;
+
+
+.footer {
+    background-color:$darkGray;
+    color: $almostWhite;
+    padding: $topBottomPadding $siteMarginMax;
+    font-size: 1.25rem;
+    text-align: right;
+
+    .initials-svg {
+        fill: $almostWhite;
+        height: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: $topBottomPadding $siteMarginSmall;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1920px){
+    .footer {
+        padding: $topBottomPadding $siteMargin;
+    }
+}

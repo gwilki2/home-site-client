@@ -1,0 +1,12 @@
+@import '../../../config/globalStyleVars.scss';
+
+.happy-logo {
+    height: 3em;
+    fill: $almostWhite;
+}
+
+@media (max-width: 800px) {
+    .happy-logo {
+        display: none;
+    }
+}

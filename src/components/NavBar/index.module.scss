@@ -1,0 +1,27 @@
+@import '../../config/globalStyleVars.scss';
+
+$topBottomPadding: .5em;
+
+.nav-bar {
+    //height: 2rem;
+    background-color: $darkGray;
+    display: flex;
+    padding: $topBottomPadding $siteMarginMax;
+    justify-content: space-between;
+    align-items: center;
+    color: $almostWhite;
+    gap: 1rem;
+}
+
+@media (max-width: 600px){
+    .nav-bar{
+        flex-direction: column;
+        padding: $topBottomPadding $siteMarginSmall;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1920px){
+    .nav-bar {
+        padding: $topBottomPadding $siteMargin;
+    }
+}

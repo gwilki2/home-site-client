@@ -1,0 +1,11 @@
+.main-links-display {
+    display: flex;
+    gap: 1rem;
+    //background-color: orangered;
+}
+
+@media (max-width: 400px) {
+    .main-links-display{
+        flex-direction: column;
+    }
+}
