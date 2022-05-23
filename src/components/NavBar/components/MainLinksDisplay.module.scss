@@ -21,7 +21,7 @@
         }
         &:hover:not(.active):not(.disabled) {
             // background-color: $almostWhiteHighlight;
-            background-color: #d9d981b3;
+            background-color: $goldHighlight;
             color: $darkGray;
             transform: translateY(-2px);
         }
