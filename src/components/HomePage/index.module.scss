@@ -22,17 +22,28 @@
     ul {
         margin-top: 1em;
         list-style: none;
-        a {
-            text-decoration: none;
-            color: $siteMaroon;
+        li {
+            padding: 0.4em;
+            margin-left:-0.4em;
+            a {
+                margin-left:-0.4em;
+                padding: 0.1em 0.4em;
+                text-decoration: none;
+                border-radius: 5px;
+                color: $siteMaroon;
+                &:hover {
+                    background-color: $goldHighlight;
+                }
+                line-height: 0;
+            }
         }
 
     }
     img {
         width: 4em;
-        border-radius: 1.5em;
-        border-left: 2px solid #333;
-        border-top: 2px solid #333;
+        border-radius: 1.25em;
+        border-left: 2px solid #aaa;
+        border-top: 2px solid #aaa;
         margin-right: 1rem;
         background-color: #333;
     }

@@ -12,5 +12,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: 
     linear-gradient(160deg,rgb(85, 4, 4), #ffffff00 12%, #ffffff00 85%, rgba(85, 4, 4, .5)), 
-    linear-gradient(75deg, rgba(200, 200, 0, .7), #ffffff00 7%, #ffffff00 95%, yellow);
+    linear-gradient(75deg, rgba(225, 225, 0, .45), #ffffff00 7%, #ffffff00 95%, rgba(225, 225, 0, .55));
 }

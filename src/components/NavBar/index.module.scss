@@ -7,11 +7,18 @@ $topBottomPadding: .75em;
     background-color: $darkGray;
     display: flex;
     padding: $topBottomPadding $siteMarginMax;
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: center;
     color: $almostWhite;
     gap: 1rem;
+
+    &>* {
+        flex: 1;
+    }
+
 }
+
+
 
 @media (max-width: 600px){
     .nav-bar{

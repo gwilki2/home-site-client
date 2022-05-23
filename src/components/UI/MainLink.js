@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import styleClasses from './MainLink.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const MainLink = ({ content, isExternal, to, standardProps, disableLink, disabledClassName='', activeClassName='', faIcon }) => {
+const MainLink = ({ content, isExternal, to, standardProps, disableLink, disabledClassName='', activeClassName='', faIcon, className='' }) => {
 
     const onClick = (e) => {
         if (disableLink) {
@@ -24,13 +24,13 @@ const MainLink = ({ content, isExternal, to, standardProps, disableLink, disable
             href={disableLink ? '#' : to}
             rel="noreferrer"
             target="_blank"
-            className={`${styleClasses['main-link']} ${disableLink ? disabledClassName : ''}`}
+            className={`${styleClasses['main-link']} ${disableLink ? disabledClassName : ''} ${className}`}
         >
             {linkContent}
         </a>
         : <NavLink
             {...standardProps}
-            className={(navData) => `${styleClasses['main-link']} ${navData.isActive ? activeClassName : ''} ${disableLink ? disabledClassName : ''}`}
+            className={(navData) => `${styleClasses['main-link']} ${navData.isActive ? activeClassName : ''} ${disableLink ? disabledClassName : ''} ${className}`}
             to={to}
             onClick={onClick}
         >

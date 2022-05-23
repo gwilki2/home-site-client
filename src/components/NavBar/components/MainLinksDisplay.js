@@ -13,7 +13,8 @@ const MainLinksDisplay = ({links}) => {
                 disableLink={link.disabled}
                 activeClassName={cssModules.active}
                 disabledClassName={cssModules.disabled}
-                faIcon = {link.faIcon}
+                faIcon={link.faIcon}
+                className={cssModules[link.name + '-home-link']}
             />)}
         </div>
     )

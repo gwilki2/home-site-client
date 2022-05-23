@@ -4,7 +4,7 @@ import InputReg from '../UI/InputReg'
 import cssModules from './index.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeOpenText, faIdCard } from '@fortawesome/pro-duotone-svg-icons'
-import { faAt, faSignature, faCommentPen, faInboxOut, faHashtag } from '@fortawesome/pro-solid-svg-icons'
+import { faAt, faSignature, faCommentPen, faInboxOut, faHashtag, faHandPointRight } from '@fortawesome/pro-solid-svg-icons'
 import Panel from '../UI/Panel'
 
 const ContactPage = () => {
@@ -21,7 +21,7 @@ const ContactPage = () => {
                     <form className={cssModules['contact-page__form']} onSubmit={underConstruction}>
                     
                         <div className={cssModules['contact-page__sender-info']}>
-                            <div className={cssModules['contact-page__sender-info-left']}><FontAwesomeIcon icon={ faIdCard} size="9x" /></div>
+                            <div className={cssModules['contact-page__sender-info-left']}><h3>Contact Info <FontAwesomeIcon icon={ faHandPointRight } /></h3><FontAwesomeIcon icon={ faIdCard} size="9x" /></div>
                             <div className={cssModules['contact-page__sender-info-right']}>
                                 <InputReg
                                     inputProps={{

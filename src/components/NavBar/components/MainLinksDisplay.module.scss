@@ -3,6 +3,7 @@
 .main-links-display {
     display: flex;
     gap: .25rem;
+    justify-content: flex-end;
     //background-color: orangered;
     a {
         padding: 0.25em .75em;
@@ -12,6 +13,12 @@
             transform .3s ease, 
             background-color .3s ease, 
             color .3s ease;
+            
+        &.linkedin-home-link {
+            svg {
+                color: #0072b1;
+            }
+        }
 
         &.active {
             background-color: $almostWhite;
@@ -30,6 +37,7 @@
             cursor: not-allowed;
             color: #999;
         }
+
     }
     
 
