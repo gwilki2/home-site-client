@@ -1,11 +1,45 @@
+@import '../../../config/globalStyleVars.scss';
+
 .main-links-display {
     display: flex;
-    gap: 1rem;
+    gap: .25rem;
     //background-color: orangered;
+    a {
+        padding: 0.25em .75em;
+        font-weight: 600;
+        border-radius: .25rem;
+        transition: 
+            transform .3s ease, 
+            background-color .3s ease, 
+            color .3s ease;
+
+        &.active {
+            background-color: $almostWhite;
+            color: $siteMaroon;
+            cursor: default;
+            
+        }
+        &:hover:not(.active):not(.disabled) {
+            // background-color: $almostWhiteHighlight;
+            background-color: #d9d981b3;
+            color: $darkGray;
+            transform: translateY(-2px);
+        }
+
+        .disabled{
+            cursor: not-allowed;
+            color: #999;
+        }
+    }
+    
+
 }
 
+
+// style={disableLink ? { cursor: 'not-allowed', color: '#aaa' } : {}
 @media (max-width: 400px) {
     .main-links-display{
         flex-direction: column;
+        gap: .5rem;
     }
 }
